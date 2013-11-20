@@ -1,4 +1,4 @@
-package com.tianhuaelitetech.adm.adm;
+package com.adm.common;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

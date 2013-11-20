@@ -1,4 +1,4 @@
-package com.tianhuaelitetech.adm.adm;
+package com.adm.common;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -12,7 +12,6 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import org.apache.hadoop.util.GenericOptionsParser;
 
 public class WordCount {
 
@@ -49,13 +48,8 @@ public class WordCount {
 
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration();
-		/*
-		String[] otherArgs = new GenericOptionsParser(conf, args)
-				.getRemainingArgs();
-		if (otherArgs.length != 2) {
-			System.err.println("Usage: wordcount <in> <out>");
-			System.exit(2);
-		}*/
+
+		
 		Job job = new Job(conf, "word count");
 		job.setJarByClass(WordCount.class);
 		job.setMapperClass(TokenizerMapper.class);
@@ -63,8 +57,10 @@ public class WordCount {
 		job.setReducerClass(IntSumReducer.class);
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
+		
 		Path input_path = new Path("hdfs://localhost:9000/user/areshero/input01");
 		Path output_path = new Path("hdfs://localhost:9000/user/areshero/output02");
+		
 		FileInputFormat.addInputPath(job, input_path);
 		FileOutputFormat.setOutputPath(job, output_path);
 		System.exit(job.waitForCompletion(true) ? 0 : 1);
