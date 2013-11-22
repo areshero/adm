@@ -59,10 +59,12 @@ public class WordCount {
 		job.setOutputValueClass(IntWritable.class);
 		
 		Path input_path = new Path("hdfs://localhost:9000/user/areshero/input01");
-		Path output_path = new Path("hdfs://localhost:9000/user/areshero/output02");
+		Path output_path = new Path("hdfs://localhost:9000/user/areshero/output01");
 		
 		FileInputFormat.addInputPath(job, input_path);
 		FileOutputFormat.setOutputPath(job, output_path);
+		
+		
 		System.exit(job.waitForCompletion(true) ? 0 : 1);
 	}
 }
