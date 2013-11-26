@@ -12,10 +12,11 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 
-import com.adm.common.WordCount.IntSumReducer;
-import com.adm.common.WordCount.TokenizerMapper;
+import com.adm.common.mapreducejob.WordCount;
+import com.adm.common.mapreducejob.WordCount.IntSumReducer;
+import com.adm.common.mapreducejob.WordCount.TokenizerMapper;
 
-public class MapReduceTask extends Configured implements Tool{
+public abstract class MapReduceTask extends Configured implements Tool{
 	/**	
 	 * 	代表任务执行成功。
 	 */
@@ -25,11 +26,11 @@ public class MapReduceTask extends Configured implements Tool{
 	 */
 	public static final int FAILURE = 1;
 
-	public Job getJob() {
+	protected final Job getJob() {
 		return job;
 	}
 
-	private Job job;
+	protected Job job;
 	public String[] getCommandArguments() {
 		return commandArguments;
 	}
@@ -48,22 +49,7 @@ public class MapReduceTask extends Configured implements Tool{
 		return job.getConfiguration();
 	}
 	
-	public void setUpTheJob() throws IOException{
-		job = new Job(getConf(),"word count");
-		
-		job.setJarByClass(WordCount.class);
-		job.setMapperClass(TokenizerMapper.class);
-		job.setCombinerClass(IntSumReducer.class);
-		job.setReducerClass(IntSumReducer.class);
-		job.setOutputKeyClass(Text.class);
-		job.setOutputValueClass(IntWritable.class);
-		
-		Path input_path = new Path("hdfs://localhost:9000/user/areshero/input01");
-		Path output_path = new Path("hdfs://localhost:9000/user/areshero/output01");
-		
-		FileInputFormat.addInputPath(job, input_path);
-		FileOutputFormat.setOutputPath(job, output_path);
-	}
+	public abstract void setUpTheJob() ;
 
 	@Override
 	public int run(String[] arg0) throws Exception {

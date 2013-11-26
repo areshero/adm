@@ -1,14 +1,20 @@
-package com.adm.common;
+package com.adm.common.mapreducejob;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class WordCount {
+import com.adm.common.MapReduceTask;
+
+public class WordCount extends MapReduceTask {
 
 	public static class TokenizerMapper extends
 			Mapper<Object, Text, Text, IntWritable> {
@@ -39,6 +45,38 @@ public class WordCount {
 			result.set(sum);
 			context.write(key, result);
 		}
+	}
+
+	@Override
+	public void setUpTheJob() {
+		
+		try {
+			job = new Job(getConf(), "word count");
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+
+		job.setJarByClass(WordCount.class);
+		job.setMapperClass(TokenizerMapper.class);
+		job.setCombinerClass(IntSumReducer.class);
+		job.setReducerClass(IntSumReducer.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+
+		Path input_path = new Path(
+				"hdfs://localhost:9000/user/areshero/input01");
+		Path output_path = new Path(
+				"hdfs://localhost:9000/user/areshero/output01");
+
+		try {
+			FileInputFormat.addInputPath(job, input_path);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		FileOutputFormat.setOutputPath(job, output_path);
+
 	}
 
 }
