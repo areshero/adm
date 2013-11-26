@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-import com.adm.common.MapReduceTask;
+import com.adm.common.mapreducetask.MapReduceTask;
 
 public class WordCount extends MapReduceTask {
 
@@ -48,13 +48,9 @@ public class WordCount extends MapReduceTask {
 	}
 
 	@Override
-	public void setUpTheJob() {
-		
-		try {
-			job = new Job(getConf(), "word count");
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
+	public void setUpTheJob() throws IOException {
+
+		job = new Job(getConf(), "word count");
 
 		job.setJarByClass(WordCount.class);
 		job.setMapperClass(TokenizerMapper.class);
@@ -68,13 +64,8 @@ public class WordCount extends MapReduceTask {
 		Path output_path = new Path(
 				"hdfs://localhost:9000/user/areshero/output01");
 
-		try {
-			FileInputFormat.addInputPath(job, input_path);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		
+		FileInputFormat.addInputPath(job, input_path);
+
 		FileOutputFormat.setOutputPath(job, output_path);
 
 	}

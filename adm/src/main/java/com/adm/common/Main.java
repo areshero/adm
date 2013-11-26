@@ -1,6 +1,8 @@
 package com.adm.common;
 
 import com.adm.common.mapreducejob.WordCount;
+import com.adm.common.mapreducetask.LittleMing;
+import com.adm.common.mapreducetask.MapReduceTask;
 
 public class Main {
 

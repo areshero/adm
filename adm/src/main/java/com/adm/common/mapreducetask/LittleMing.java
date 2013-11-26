@@ -1,9 +1,10 @@
-package com.adm.common;
+package com.adm.common.mapreducetask;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.hadoop.util.ToolRunner;
+
 
 
 public class LittleMing {

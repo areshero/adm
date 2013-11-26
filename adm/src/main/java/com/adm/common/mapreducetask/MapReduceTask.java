@@ -1,20 +1,12 @@
-package com.adm.common;
+package com.adm.common.mapreducetask;
 
 import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
-import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 
-import com.adm.common.mapreducejob.WordCount;
-import com.adm.common.mapreducejob.WordCount.IntSumReducer;
-import com.adm.common.mapreducejob.WordCount.TokenizerMapper;
 
 public abstract class MapReduceTask extends Configured implements Tool{
 	/**	
@@ -49,7 +41,7 @@ public abstract class MapReduceTask extends Configured implements Tool{
 		return job.getConfiguration();
 	}
 	
-	public abstract void setUpTheJob() ;
+	public abstract void setUpTheJob() throws IOException ;
 
 	@Override
 	public int run(String[] arg0) throws Exception {
