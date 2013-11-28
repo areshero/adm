@@ -5,7 +5,7 @@ import com.adm.common.mapreducetask.LittleMing;
 import com.adm.common.mapreducetask.MapReduceTask;
 
 public class Main{
-
+	
 	/**
 	 * @param args
 	 * @throws Exception 
