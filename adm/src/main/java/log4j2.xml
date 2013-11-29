@@ -3,21 +3,21 @@
 	<appenders>
 		<RollingFile name="outErrorFile" filename="log/error.log"
 			filePattern="logs/$${date:yyyy-MM}/exception-%d{MM-dd-yyyy}-%i.log.gz">
-			<PatternLayout pattern="%d{yyyy.MM.dd HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n" />  
-            <SizeBasedTriggeringPolicy size="10MB" />
+			<PatternLayout
+				pattern="%d{yyyy.MM.dd HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n" />
+			<SizeBasedTriggeringPolicy size="10MB" />
 		</RollingFile>
-		
-		<Console name="StandardOutPut" target="SYSTEM_OUT">  
-            <PatternLayout pattern="%d{yyyy.MM.dd HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n" />  
-        </Console>
+
+		<Console name="StandardOutPut" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy.MM.dd HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</Console>
 	</appenders>
-	
-	
-	<loggers>  
-        <root level="DEBUG">  
-            <appender-ref level="DEBUG" ref="consolePrint"/>  
-            <appender-ref level="ERROR" ref="outErrorFile"/>  
-        </root>  
-    </loggers>  
-	
+	<loggers>
+		<root level="DEBUG">
+			<appender-ref level="DEBUG" ref="consolePrint" />
+			<appender-ref level="ERROR" ref="outErrorFile" />
+		</root>
+	</loggers>
+
 </configuration>

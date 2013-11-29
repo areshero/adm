@@ -9,13 +9,8 @@ import org.apache.hadoop.util.Tool;
 
 
 public abstract class MapReduceTask extends Configured implements Tool{
-	/**	
-	 * 	代表任务执行成功。
-	 */
+
 	public static final int SUCCESS = 0;
-	/**	
-	 * 	代表任务执行失败。
-	 */
 	public static final int FAILURE = 1;
 
 	protected final Job getJob() {

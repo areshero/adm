@@ -14,6 +14,8 @@ public class Main{
 		LittleMing xiaoming = new LittleMing();
 		MapReduceTask task = new WordCount();
 		xiaoming.addMapReduceTask(task);
+		
+		
 		xiaoming.OnslaughtOfLittleMing();
 
 	}
