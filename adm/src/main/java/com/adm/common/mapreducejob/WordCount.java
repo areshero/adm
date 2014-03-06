@@ -62,7 +62,7 @@ public class WordCount extends MapReduceTask {
 		Path input_path = new Path(
 				"hdfs://localhost:9000/user/areshero/input01");
 		Path output_path = new Path(
-				"hdfs://localhost:9000/user/areshero/output01");
+				"hdfs://localhost:9000/user/areshero/output02");
 
 		FileInputFormat.addInputPath(job, input_path);
 

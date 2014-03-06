@@ -1,0 +1,452 @@
+﻿----------------------- Page 1-----------------------
+
+                                                                                         www.sharewithu.com  
+
+                                                         Exercise 22    
+
+                                        
+Historically, a cornerstone of classical empiricism has    
+been the notion that every true generalization must be    
+confirmable by specific observations. In classical    
+empiricism, the truth of ―All balls are red,‖ for example, is    
+assessed by inspecting balls; any observation of a non red    
+ball refutes unequivocally the proposed generalization.    
+For W.V.O. Quine, however, this constitutes an overly    
+―narrow‖ conception of empiricism. ―All balls are red,‖ he    
+maintains, forms one strand within an entire web of    
+statements (our knowledge); individual observations can be    
+referred only to this web as a whole. As new observations    
+are collected, he explains, they must be integrated into the    
+web. Problems occur only if a contradiction develops    
+between a new observation, say, ―That ball is blue,‖ and the    
+preexisting statements. In that case, he argues, any    
+statement or combination of statements (not merely the    
+―offending‖ generalization, as in classical empiricism) can    
+be altered to achieve the fundamental requirement, a system    
+free of contradictions, even if, in some cases, the alteration    
+consists of labeling the new observation a ―hallucination.‖    
+(172 words)    
+  
+1. According to Quine‘s conception of empiricism, if a    
+new observation were to contradict some statement    
+already within our system of knowledge, which of    
+the following would be true?    
+(A) The new observation would be rejected as    
+untrue.    
+(B) Both the observation and the statement in our    
+system that it contradicted would be    
+discarded.    
+(C) New observations would be added to our web    
+of statements in order to expand our system    
+of knowledge.    
+(D) The observation or some part of our web of    
+statements would need to be adjusted to    
+resolve the contradiction.    
+(E) An entirely  new field of knowledge would be    
+created.    
+  
+For the following question, consider each of the    
+choices separately and select all that apply    
+2. It can be inferred from the passage that Quine    
+
+                                                      本文由尚友原创或整理  
+
+                                                                   1  
+
+----------------------- Page 2-----------------------
+
+                                                                                         www.sharewithu.com  
+
+considers classical empiricism to be ―overly    
+‗narrow‘ ‖for whic h of the following reasons?    
+  
+A Classical empiricism requires that our system    
+of generalizations be free of contradictions.    
+B Classical empiricism demands that in the case    
+of a contradiction between an individual    
+observation and a generalization, the    
+generalization must be abandoned.    
+C Classical empiricism asserts that every observation    
+will either confirm an existing generalization    
+or initiate a new generalization.  
+  
+Shergottites, the name given to three anomalous    
+achondrites (igneous meteorites lacking chondrules) so far    
+discovered on Earth, present scientists with a genuine    
+enigma. Shergottites crystallized from molten rock less    
+than 1.1 billion years ago (some 3.5 billion years later than    
+typical achondrites) and were presumably ejected into    
+space when an object impacted on a body similar in    
+chemical composition to Earth. While some scientists    
+speculate that shergottites derive from Io (a volcanically    
+active moon of Jupiter), recent measurements suggest that    
+since Io‘s surface is rich in sulfur and sodium, the chemical    
+composition of its volcanic products would probably be    
+unlike that of the shergottites. Moreover, any fragments    
+dislodged from Io by interbody impact would be unlikely    
+to escape the gravitational pull of Jupiter.    
+The only other logical source of shergottites is Mars.    
+Space-probe photographs indicate the existence of giant    
+volcanoes on the Martian surface. From the small number of    
+impact craters that appear on Martian lava flows, one can    
+estimate that the planet was volcanically active as recently    
+as a half-billion years ago—and may be active today.    
+(178 words)    
+  
+3. The passage provides information to answer which    
+of the following questions?    
+(A) What is the precise age of the solar system?    
+(B) How did shergottites get their name?    
+(C) What are the chemical properties shared by    
+shergottites and Martian soils?    
+(D) How volcanically active is the planet Jupiter?    
+(E) What is a major feature of the Martian surface?    
+  
+For the following question, consider each of the    
+
+                                                       本文由尚友原创或整理  
+
+                                                                    2  
+
+----------------------- Page 3-----------------------
+
+                                                                               www.sharewithu.com  
+
+choices separately and select all that apply    
+4. It can be inferred from the passage that each of the    
+following is a consideration in determining whether    
+a particular planet is a possible source of shergottites    
+that have been discovered on Earth    
+  
+A strength of the planet‘s field of gravity    
+B proximity of the planet to its moons    
+C chemical composition of the planet‘s surface  
+  
+
+阅读1：  
+  
+
+翻译如下：  
+  
+
+从历史的角度看，古典经验主义的奠基石是这样一种观念，即每一个正确的推论都必须能被具体的 
+观察所验证。例如，在古典经验主义中，“所有的球都是红色的”这一断言的真理性，就是通过检验 
+所有的球而得以评估的；任何观察，只要发现一个非红色的球，即断然推翻所提出的那一推论。  
+    但是，对于W.V.O.奎因（Quine）而言，这对经验主义构成了一种过于“狭隘”的理解。他坚持认 
+为，“所有的球都是红色的”在整张陈述之网（我们的知识）中仅构成一股网绳；单项的观察只能参 
+照这一整体网络。他解释道，随着新的观察被收集到，它们必须被综合到这一网络中。只有当新的 
+观察，如“那个球是蓝色的”，与既存的陈述之间发生矛盾时，问题才会发生。在那种情况下，他论 
+辩道，任何一项陈述或一组陈述（而不是象在古典经验主义中那样仅仅是那个“背悖的”理论），可予 
+以改变，以实现那种根本的要求，即一个不含有矛盾的系统，即使在某些情形中，这种改变涉及到 
+将新的观察归作一种“幻觉” ．  
+  
+Q1：由 Q      定位至第二段，再由 contradiction                定位至 can  be  altered  to  achieve  the  fundamental  
+requirement, a system free of contradictions，   由此可知该题选D；  
+  
+
+Q2：问的是Q 的狭义观点是出于什么原因？  
+解析：根据文中第一句话：广义观点的原因的是Historically, a cornerstone of classical empiricism has    
+been the notion that every true generalization must be confirmable by specific observations.  对之取反， 
+得出正确答案B。  
+  
+
+阅读2：  
+  
+该文依旧是老G 文章改写,  背景知识供参考：  
+  
+
+在地球上所被发现的并为科学所已知的数以千计的陨石（meteorite）种类中，仅约100 种的陨石是 
+火成的（igneous）；也就是说，自从诸行星最初形成以来，它们在过去的某个时候已经历过由火山 
+作用而致的溶化过程。这些火成陨石被称为无球粒陨石（achondrite ），因为它们缺乏陨石球粒 
+ （chondule ）——即在数千种陨石（被称作“球粒陨石” ，chondrite ）中所发现的石质小球粒，主要是 
+由在阳系形成之际从尘埃和气体中凝结而成的且未曾改变过的矿物质构成。无球粒陨石是唯一已知 
+的起源于地球-月球系（Earty-Moon system）之外的火山岩实例。绝大多数无球粒陨石被认为是由于 
+介体撞击作用（interbody  impact）而从小行星（asteroid ）中分离出来的。这些小行星的直径自10 
+至500 公里不等，位于火星（Mars）和木星（Jupiter ）之间的太阳轨道。  
+      辉熔长无球粒陨石（shrgottite ）——一个给迄今为止在地球上发现的三种不规则无球粒陨石 
+
+                                           本文由尚友原创或整理  
+
+                                                      3  
+
+----------------------- Page 4-----------------------
+
+                                                                              www.sharewithu.com  
+
+所起的名称——对科学家来说构成了一个真正的不解之谜。在不到 1.1  亿年之前（大概要比典型的 
+无球粒陨石晚3.5 亿年），辉熔长无球粒陨石从深化的岩石中晶化成形，并据推测，当一个物体撞击 
+到一个与地球的化学构成相近似的天体上时，这些辉熔长无球粒陨石便被弹射入太空。  
+      尽管大多数陨石似乎都起源于相对较小的天体，但辉熔长无球粒陨石却展现出某些特性，表 
+明它们的来源是某一颗庞大的行星，据信为火星。为了解释这样一种不太可能的来源，必须援引某 
+个非同寻常的因素，因为一块岩石碎片要想逃逸出即使象月亮这么小的一个天体的重力场，使该岩 
+石碎片加速所必不可少的撞击力是如此之大，以致于任何源自月亮的陨石从未被发现过。  
+      虽然某些科学家猜测，辉熔长无球陨石起源于木卫一（Io，木星的一个火山活动频繁的卫星）， 
+但最近的测量表明，由于木卫一的表面含有丰富的硫和钠，因此，其火山产物的化学构成可能不会 
+与辉熔长无球粒陨石的化学构成相同。此外，任何由于介体撞击作用而从木卫一分离出来的岩石碎 
+片将不太可能逃逸出木星的重力引力。  
+      辉熔长无球粒陨石其它唯一合乎逻辑的来源就是火星。太空探测器（spaceprobe ）拍摄的照 
+片显示出火星表面存在着巨大的火山。从出现在火星溶岩流（lavaflow ）上的少量撞击坑（impact  
+crater ），人们可估计出该行星近来一直到五千万年之前仍有活跃的火山活动——甚至今天还仍活跃。 
+辉熔长无球粒陨石火星起因论最大的缺陷在于，地球上不存在任何源自月亮的陨石。考虑到月亮较 
+小的尺寸以及与地球更为接近的空间距离，能将火星表面的一块碎片弹射入地球交叉轨道 
+ （Earth-intersecting  orbit）的撞击事件在火星上发生甚至要比这一事件在月亮上发生更不可能。但 
+是，最近的一项研究表明，在火星表面下的永久冻土冰层（permafrost）很有可能改变了陨石对它 
+的撞击作用。假如这些冰层因撞击的物体而迅速汽化蒸发的话，那么膨胀的气体很有可能帮助弹射 
+出去的碎片达到逃逸速度。最后，由太空探测器进行的分析证明，在火星土壤和辉熔长无球粒陨石 
+之间存在着一种令人瞩目的相近性。  
+  
+Q3：文章回答了下面哪个问题？  
+解析：由第二段这句话Space-probe  photographs  indicate  the  existence  of  giant  volcanoes  on  the  
+Martian surface，可知，E 选项正确；  
+  
+
+Q4：由第一段中间和末尾定位到chemical  和  gravitational  可知，正确答案AC 。  
+
+  
+
+  
+Scientists have sought evidence of long-term solar    
+periodicities by examining indirect climatological data,    
+such as fossil records of the thickness of ancient tree rings.    
+These studies, however, failed to link unequivocally    
+terrestrial climate and the solar-activity cycle, or even to    
+confirm the cycle's past existence.    
+  
+  
+5. It can be inferred from the passage that studies    
+attempting to use tree-ring thickness to locate possible    
+links between solar periodicity and terrestrial climate are    
+based on which of the following assumptions?    
+(A) The solar-activity cycle existed in its present form    
+during the time period in which the tree    
+rings grew.    
+(B) The biological mechanisms causing tree growth    
+are unaffected by short-term weather pat terns.    
+
+                                           本文由尚友原创或整理  
+
+                                                     4  
+
+----------------------- Page 5-----------------------
+
+                                                                                           www.sharewithu.com  
+
+(C) Average tree-ring thickness varies from species    
+to species.    
+(D) Tree-ring thicknesses reflect changes in terrestrial    
+climate.    
+(E) Both terrestrial climate and the solar-activity    
+cycle randomly affect tree-ring thickness.  
+  
+In Raisin in the Sun, Lorraine Hansberry does not reject    
+integration or the economic and moral promise of the    
+American dream; rather, she remains loyal to this dream    
+while looking, realistically, at its incomplete realization.    
+Once we recognize this dual vision, we can accept the    
+play's ironic nuances as deliberate social commentaries by    
+Hansberry rather than as the "unintentional" irony that    
+Bigsby attributes to the work. Indeed a curiously persistent    
+refusal to credit Hansberry with a capacity for intentional    
+irony has led some critics to interpret the play's thematic    
+conflicts as mere confusion, contradiction, or eclecticism.    
+Isaacs, for example, cannot easily reconcile Hansberry's    
+intense concern for her race with her ideal of human    
+reconciliation. But the play's complex view of Black    
+self-esteem and human solidarity as compatible is no more    
+"contradictory" than Du Bois' famous, well-considered    
+ideal of ethnic self-awareness coexisting with human unity,    
+or Fanon's emphasis on an ideal internationalism that also    
+accommodates national identities and roles. (158 words)    
+  
+6.The author's primary purpose in this passage is to    
+(A) explain some critics' refusal to consider Raisin    
+in the Sun a deliberately ironic play    
+(B)suggest that ironic nuances ally Raisin in the    
+Sun with  Du Bois' and Fanon's writings    
+(C) analyze the fundamental dramatic conflicts in    
+Raisin in the Sun    
+(D) justify the inclusion of contradictory elements    
+in Raisin in the Sun    
+(E) affirm the thematic coherence underlying Raisin in    
+the Sun    
+  
+7. Select the sentence that the author of the passage    
+reinforce his criticism of responses such as Isaacs' to    
+Raisin in the Sun?    
+  
+8.The author of the passage would probably consider    
+which of the following judgments to be most similar    
+to the reasoning of critics?    
+
+                                                        本文由尚友原创或整理  
+
+                                                                      5  
+
+----------------------- Page 6-----------------------
+
+                                                                                  www.sharewithu.com  
+
+(A) The world is certainly flat; therefore, the person    
+proposing to sail around it is unquestionably    
+foolhardy.    
+(B) Radioactivity cannot be directly perceived;    
+therefore, a scientist could not possibly control    
+it in a laboratory.    
+(C) The painter of this picture could not intend it to    
+be funny, therefore, its humor must result    
+from a lack of skill.    
+(D) Traditional social mores are beneficial to culture;    
+therefore, anyone who deviates from    
+them acts destructively.    
+(E) Filmmakers who produce documentaries deal    
+exclusively with facts; therefore, a filmmaker    
+who reinterprets particular events is misleading us.  
+
+  
+
+  
+
+阅读1：  
+来电背景知识吧~  
+  
+Solar flare  太阳耀斑，太阳色球层爆发  
+  
+太阳黑子是由较暗的核（本影）和围绕它的较亮部分（半影）构成的，中间凹陷，成对或成群出现．黑 
+子数年平均值的变化周期约为 11 年．1941 年比尔曼提出，黑子的变暗是由于强磁场抑制光球深处 
+热量通过对流向上传输的作用造成的．1974 年帕克提出，黑子的变冷是由于非辐射能量传输的增强 
+把黑子中能量大量转移都黑子之外所造成的．  
+  
+太阳耀斑是太阳大气中一种不稳定的过程，在短暂的时间内释放大量能量，引起局部区域瞬间加热 
+和各种电磁辐射及粒子辐射的突然增强．  
+  
+Q5：作者基于什么样的假设？  
+解析：科学家研究records of the thickness of ancient tree rings，就是为了link unequivocally    
+terrestrial climate and the solar-activity cycle，所以假设就是二者之间有关系！  正确答案D；  
+  
+  
+阅读2：参考译文如下：  
+参考译文：  
+在《阳光下的葡萄干评论》（Raisin in the Sun）一剧中，Lorraine Hansberry 并不摈弃美国梦中多种目 
+的的融合，或者说美国梦给人们带来的经济和道德上的希望；相反，她一方面对这一梦想矢志不移， 
+一方面则又以现实的眼光审视它那残缺不全的一面。我们一旦辨认出这一双重视角，我们就可以将 
+该剧带有讽刺色彩的精妙内涵作为Hansberry 有意识的社会评论予以接受，而不是像Bigsby 所说的 
+那样，将其视作“无意识的讽刺” 。确实，人们长期以来就拒不承认 Hansberry  具备进行有意识讽喻 
+的能力，这种令人费解的做法已导致某些评论家将该剧作的主题冲突解释成为纯粹的混乱、矛盾或 
+折衷主义。例如，Issacs 就无法轻易地将Hansberry对其种族强烈的关注与其人类和谐之理想相调和。 
+但该剧认为黑人的自尊可以与人类大同相融合，这一复杂观点丝毫都不比 Du  Bois 或Fanon 两人的 
+观点更具“矛盾”色彩：Du Bois 经过深思熟虑，提出了其著名的民族的自觉可以和人类大同共存这一 
+
+                                               本文由尚友原创或整理  
+
+                                                          6  
+
+----------------------- Page 7-----------------------
+
+                                                                                       www.sharewithu.com  
+
+观点；Fanon           则对理想的国际主义进行了强调，而这一理想的国际主义同样也能兼容民族身份与角 
+色。  
+  
+
+Q6：文章主旨？  
+解析：文章开篇提到does not reject integration，接下来全文都是讨论一致性，完整性的问题，所以 
+正确答案E；  
+  
+
+Q7：选句子reinforce his criticism of responses？  
+解析：文末处But the play's complex view of Black    
+self-esteem and human solidarity as compatible is no more    
+"contradictory" than Du Bois' famous, well-considered    
+ideal of ethnic self-awareness coexisting with human unity,    
+or Fanon's emphasis on an ideal internationalism that also    
+accommodates national identities and roles.  
+  
+
+Q8：下面哪个观点和原文批评者的reasoning 最相似？  
+解析：批评者是因为缺乏能力导致结果而并非刻意如此做，纵观选项可知，正确答案C。  
+  
+  
+The transplantation of organs from one individual to    
+another normally involves two major problems: (1) organ    
+rejection is likely unless the transplantation antigens of    
+both individuals are nearly identical, and (2) the    
+introduction of any unmatched transplantation antigens    
+induces the development by the recipient of donor-specific    
+lymphocytes that will produce violent rejection of further    
+transplantations from that donor. However, we have found    
+that, among many strains of rats, liver transplants are  never    
+rejected, and that they even induce a state of donor-specific    
+unresponsiveness. Our hypothesis is that (1) many strains    
+of rats simply cannot mount a sufficiently vigorous    
+destructive immune-response (using lymphocytes) to    
+outstrip the liver‘s relatively great capacity to protect itself    
+from immune-response damage and that (2) the systemic    
+unresponsiveness observed is due to concentration of the    
+recipient‘s donor-specific lymphocytes at the site of the    
+liver transplant. (138 words)    
+9 The primary purpose of the passage is to treat the    
+accepted generalizations about organ transplantation in    
+which of the following ways?    
+(A) Explicate their main features    
+(B) Suggest an alternative to them    
+(C) Examine their virtues and limitations    
+(D) Criticize the major evidence used to support them    
+(E) Present findings that qualify them    
+  
+
+                                                     本文由尚友原创或整理  
+
+                                                                 7  
+
+----------------------- Page 8-----------------------
+
+                                                                                       www.sharewithu.com  
+
+  
+10. Which of the following new findings about strains    
+of rats that do not normally reject liver transplants,    
+if true, would support the authors‘ hypothesis?    
+I. Stomach transplants are accepted by the    
+recipients in all cases.    
+II. Increasing the strength of the recipient‘s    
+immune-response reaction can induce    
+liver-transplant rejection.    
+III. Organs from any other donor can be transplanted    
+without rejection after liver transplantation.    
+IV. Preventing lymphocytes from being concentrated    
+at the liver transplant produces acceptance of skin    
+transplants.    
+  
+(A) II only    
+(B) I and III only    
+(C) II and IV only    
+(D) I, II, and III only    
+(E) I, III, and IV only  
+
+  
+
+阅读1：参考翻译；  
+  
+由一人向另一人的器官移植（transplantation of organs ）通常会涉及两个主要问题：（1）除非两个的 
+移植抗原（transplantation  antigens ）近乎相同，不然的话，器官排斥（organ rejection ）就有可能 
+发生；（2 ）任何不相匹配的移植抗原的引入，会在受移植者（recipient）身上诱发供者特异性淋巴 
+细胞（donor-specificlymphocytes ），而这些淋巴细胞将对来自那个供者的进一步移植作出强烈的排 
+斥作用。但是，我们已经发现，在许多种老鼠之间，这些移植法的“常规”并没有被肝脏移植物所遵 
+循。肝脏移植物非但从没遭到过排斥，甚至还诱发了一种供者特异性无应答状态（donor-specific  
+unresponsiveness），在此状态中，随后来自那个供者其它器官的移植物，如皮肤，会永久地被接受。 
+我们的假设是：（1）许多种老鼠纯粹就是无法（利用淋巴细胞）发起一场足够强功的摧毁性免疫应 
+答（immune-response），以压倒肝脏相对较强的保护自身免遭免疫应答损害的能力；（2）所观察到 
+的系统性无应答状态，是由于受移植者的供者特异性淋巴细胞集结在肝脏移植物所在的部位所致。  
+  
+  
+Q9：文章主旨？  
+解析：However, we have found that among many strains of rats these “normal” rules of transplantation  
+are not obeyed by liver transplants.  联系文章主旨，所以选择E；  
+  
+Q10：Our  hypothesis  is  that  (1)  many  strains  of  rats  simply  cannot  mount  a  sufficiently  vigorous  
+destructive  immune-response  (using  lymphocytes)  to  outstrip  the  liver’s  relatively  great  capacity  to  
+protect itself from immune-response damage  所以选择A 。  
+
+                                                     本文由尚友原创或整理  
+
+                                                                 8  

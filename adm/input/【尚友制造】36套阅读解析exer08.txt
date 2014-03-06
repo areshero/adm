@@ -1,0 +1,413 @@
+﻿----------------------- Page 1-----------------------
+
+                                                                                                     www.sharewithu.com  
+
+  
+
+                                                          Exercise 8  
+
+                                                                       
+
+Heat pumps circulate a fluid refrigerant that cycles    
+alternatively from its liquid phase to its vapor phase in a    
+closed loop. The refrigerant, starting as a low-    
+temperature, low-pressure vapor, enters a compressor    
+5 driven by an electric motor. The refrigerant leaves the    
+compressor as a hot, dense vapor and flows through a    
+heat exchanger called the condenser, which transfers    
+heat from the refrigerant to a body of air. Now the    
+refrigerant, as a high-pressure, cooled liquid, confronts    
+10 a flow restriction which causes the pressure to drop. As    
+the pressure falls, the refrigerant expands and partially    
+vaporizes, becoming chilled. It then passes through a    
+second heat exchanger, the evaporator, which transfers    
+heat from the air to the refrigerant, reducing the    
+15 temperature of this second body of air.    
+(126 words)  
+  
+=================================================  
+  
+1. According to the passage, the role of the flow    
+restriction in a heat pump is to    
+(A) measure accurately the flow rate of the    
+refrigerant mass at that point    
+(B) compress and heat the refrigerant vapor    
+(C) bring about the evaporation and cooling of    
+refrigerant    
+(D) exchange heat between the refrigerant and the    
+air at that point    
+(E) reverse the direction of refrigerant flow when    
+needed  
+  
+=========================================  
+  
+Traditionally, the study of history has had fixed    
+boundaries and focal points—periods, countries,    
+dramatic events, and great leaders. It also has had clear    
+and firm notions of scholarly procedure: how one    
+5 inquires into a historical problem, how one presents and    
+documents one‘s findings, what constitutes admissible    
+and adequate proof. The recent popular psychohistory,    
+
+                                                       本文由尚友原创或整理  
+
+----------------------- Page 2-----------------------
+
+                                                                                                    www.sharewithu.com  
+
+committed to Freudian psychoanalysis, takes a radically    
+different approach. This commitment precludes a    
+10 commitment to history as historians have always    
+understood it. Psychohistory derives its ―facts‖ not from    
+history, the detailed records of events and their    
+consequences, but from psychoanalysis of the    
+individuals who made history, and deduces its theories    
+15 not from this or that instance in their lives, but from a    
+view of human nature that transcends history. It denies    
+the basic criterion of historical evidence: that evidence    
+be publicly accessible to, and therefore assessable by,    
+all historians. Psychohistorians, convinced of the    
+20 absolute rightness of their own theories, are also    
+convinced that theirs is the ―deepest‖ explanation of any    
+event that other explanations fall short of the truth.    
+  
+==========================================  
+  
+2. Which of the following best states the main point of    
+the passage?    
+(A) The approach of psychohistorians to historical    
+study is currently in vogue even though it    
+lacks the rigor and verifiability of traditional    
+historical method.    
+(B) Traditional historians can benefit from studying    
+the techniques and findings of psychohis-    
+torians.    
+(C) Areas of sociological study such as childhood    
+and work are of little interest to traditional    
+historians.    
+(D) The psychological assessment of an individual‘s    
+behavior and attitudes is more informative    
+than the details of his or her daily life.    
+(E) History is composed of unique and nonrepeat-    
+ing events that must be individually analyzed    
+on the basis of publicly verifiable evidence.    
+  
+3. The author of the passage puts the word ―deepest‖ in    
+quotation marks most probably in order to    
+(A) question the usefulness of psychohistorians‘    
+insights into traditional historical scholarship    
+(B) draw attention to a contradiction in the    
+psychohistorians‘ method    
+(C) emphasize the major difference between the    
+traditional historians‘ method and    
+that of psychohistorians    
+
+                                                       本文由尚友原创或整理  
+
+----------------------- Page 3-----------------------
+
+                                                                                                    www.sharewithu.com  
+
+(D) disassociate her opinion of the psychohistorians‘    
+claims from her opinion of their method    
+(E) signal her reservations about the accuracy    
+of psychohistorians‘ claims for their work  
+
+  
+
+阅读1：  
+Q1：flow restriction  在热泵中的作用是什么？  
+解析：由flow restriction 定位至  line 10 ：confronts a flow restriction which causes the pressure to drop.  
+As the pressure falls, the refrigerant expands and partially vaporizes, becoming chilled 。   因此，正确选 
+项C；  
+  
+阅读 2：搞清楚文章脉络，先是 Traditionally,  the  study  of  history....,  然后是 The  recent  popular  
+psychohistory,  ......  而后又提到 Psychohistory   derives   its   facts  not  from   history,  接着说的都是 
+Psychohistory  怎样不遵从历史  evidence  等等。  
+Q1：  main idea ？  
+由以上分析可知，recent psychoanalysis  很火，但是不客观。选A  
+  
+
+Q2：deepest  加引号想说明什么？  
+解析：有文章后半部分基调可知，作者并不赞同  modern psychohistorians ，  所以，当这些人觉得自 
+己deepest 时，作者持保留意见。选E  
+
+  
+
+  
+
+Eight percent of the Earth‘s crust is aluminum, and    
+there are hundreds of aluminum-bearing minerals and    
+vast quantities of the rocks that contain them. The best    
+aluminum ore is bauxite, defined as aggregates of alumi-    
+5 nous minerals, more or less impure, in which aluminum    
+is present as hydrated oxides. Bauxite is the richest of all    
+those aluminous rocks that occur in large quantities, and    
+it yields alumina, the intermediate product required for    
+the production of aluminum. Alumina also occurs natu-    
+10 rally as the mineral corundum, but corundum is not    
+found in large deposits of high purity, and therefore it is    
+an impractical source for making aluminum. Most of    
+the many abundant nonbauxite aluminous minerals are    
+silicates, and, like all silicate minerals, they are    
+15 refractory, resistant to analysis, and extremely difficult    
+to process. The aluminum silicates are therefore    
+generally unsuitable alternatives to bauxite because    
+considerably more energy is required to extract alumina    
+from them. (153 words)  
+  
+=======================================  
+  
+4. The author implies that a mineral must either be or    
+readily supply which of the following in order to be    
+
+                                                      本文由尚友原创或整理  
+
+----------------------- Page 4-----------------------
+
+                                                                                                    www.sharewithu.com  
+
+classified as an aluminum ore?    
+(A) An aggregate    
+(B) Bauxite    
+(C) Alumina    
+(D) Corundum    
+(E) An aluminum silicate    
+  
+For the following question, consider each of the    
+choices separately and select all that apply    
+5. The passage supplies information for answering    
+all of the following questions regarding aluminous    
+minerals    
+□A Are aluminum-bearing nonbauxite minerals    
+plentiful?    
+□B Do the aluminous minerals found in bauxite    
+contain hydrated oxides?    
+□C Are aluminous hydrated oxides found in rocks?    
+  
+6. The author implies that corundum would be used to    
+produce aluminum if    
+(A) corundum could be found that is not contami-    
+nated by silicates    
+(B) the production of alumina could be eliminated    
+as an intermediate step in manufacturing alu-    
+minum    
+(C) many large deposits of very high quality corun-    
+dum were to be discovered    
+(D) new technologies were to make it possible to    
+convert corundum to a silicate    
+(E) manufacturers were to realize that the world‘s    
+supply of bauxite is not unlimited  
+  
+=======================================  
+  
+Tillie Olsen‘s fiction and essays have been widely    
+and rightly acknowledged, particularly by contemporary    
+feminists, as major contributions to American    
+literature. Yet few of Olsen‘s readers realize the extent    
+5 to which her vision and choice of subject are rooted in    
+an earlier literary heritage—the tradition of radical    
+political thought, mostly socialist and anarchist, of the    
+1910‘s and 1920‘s, and the Old Left tradition of the    
+1930‘s. I do not mean that one can adequately explain    
+10 the eloquence of her work in terms of its political    
+origins, or that left-wing politics were the single most    
+important influence on it. My point is that its central    
+
+                                                       本文由尚友原创或整理  
+
+----------------------- Page 5-----------------------
+
+                                                                                                  www.sharewithu.com  
+
+consciousness—its profound understanding of class and    
+gender as shaping influences on people‘s lives—owes    
+15 much to that earlier literary heritage.    
+(126 words)  
+  
+===========================================  
+For the following question, consider each of the    
+choices separately and select all that apply    
+7. According to the author, which of the following    
+is NOT true of the heritage mentioned in the passage?    
+□A It emphasizes gender as the determinate    
+influence on people‘s lives.    
+□B It includes poli cal tradi ons that span three    
+decades of the twentieth century.    
+□C It has been the most important inﬂuence on    
+Olsen‘s work.    
+  
+8. Select the sentence in which the author denies possible    
+interpretations of an earlier assertion.  
+
+  
+
+阅读1：文章讲了几种铝矿，每种的存在量，含铝的多少，以及提取的难易程度。  
+  
+Q4：一种矿必须包含什么或者本身就是什么才能被定义为铝矿？  
+解析:  文章最先提到的是bauxite，it yields alumina。  然后是Alumina 本身也会occurs naturally as the  
+mineral corundum，  最后说到silicate，可以extract alumina，所以正确选项C；  
+  
+Q5：关于铝矿，作者回答了哪几个问题？  
+解析：A ：nonbauxite minerals 是否充足？定位至文章line 13：many abundant nonbauxite aluminous， 
+有回答；  
+B：bauxite 中的铝矿含有水和氧化物么？  定位至line 6：present as hydrated oxides，有回答；  
+C：rocks  里面有没有aluminous hydrated oxides ？还是刚才那个地方，有回答；  
+选ABC ；  
+Q6：如果怎样，corundum would be used to produce aluminum ？  
+解析：定位至line 10，but corundum is not found in large deposits of high purity, and therefore it is an  
+impractical source for making aluminum，选C；  
+阅读2：典型的反驳观点题目；  
+  
+Q7:  关于heritage，哪个不对？  
+解析：由heritage 定位至line 6：heritage—the tradition of radical political thought, mostly socialist and  
+anarchist, of the    
+1910‘s and 1920‘s, and the Old Left tradition of the 1930‘s.  由此得出B 是对的，所以选AC ；  
+  
+Q8:  找出一句话author denies possible interpretations of an earlier assertion。  
+解析：由deny 看到  I do not mean 。。。  that one can adequately explain the eloquence of her work in  
+terms of its political origins, or that left-wing politics were the single most important influence on it.  
+
+  
+
+                                                     本文由尚友原创或整理  
+
+----------------------- Page 6-----------------------
+
+                                                                                                   www.sharewithu.com  
+
+Our visual perception depends on the reception of    
+energy reflecting or radiating from that which we wish    
+to perceive. If our eyes could receive and measure    
+infinitely delicate sense-data, we could perceive the    
+5 world with infinite precision. The natural limits of our    
+eyes have, of course, been extended by mechanical    
+instruments; telescopes and microscopes, for example,    
+expand our capabilities greatly. There is, however, an    
+ultimate limit beyond which no instrument can take us;    
+10 this limit is imposed by our inability to receive sense-    
+data smaller than those conveyed by an individual    
+quantum of energy.    
+(97 words)  
+  
+=================================  
+9. Which of the following describes a situation    
+most analogous to the situation discussed in    
+the last sentence?    
+(A) A mathematician can only solve problems    
+the solution of which can be deduced    
+from known axioms.    
+(B) An animal can respond to no command    
+that is more complicated syntactically    
+than any it has previously received.    
+(C) A viewer who has not learned, at least    
+intuitively, the conventions of painting,    
+cannot understand perspective in a    
+drawing.    
+(D) A sensitized film will record no detail on a    
+scale that is smaller than the grain of the    
+film.    
+(E) A shadow cast on a screen by an opaque    
+object will have a sharp edge only if the    
+light source is small or very distant.    
+  
+===================================  
+Of Homer‘s two epic poems, the Odyssey has always    
+been more popular than the Iliad, perhaps because it    
+includes more features of mythology that are accessible    
+to readers. Its subject (to use Maynard Mack‘s    
+5 categories) is ―life-as-spectacle,‖ for readers, diverted    
+by its various incidents, observe its hero Odysseus    
+primarily from without; the tragic Iliad, however, presents    
+―life-as- experience‖: readers are asked to identify with    
+the mind of Achilles, whose motivations render him a    
+10 not particularly likable hero. In addition, the Iliad, more    
+
+                                                      本文由尚友原创或整理  
+
+----------------------- Page 7-----------------------
+
+                                                                                                      www.sharewithu.com  
+
+than the Odyssey, suggests the complexity of the gods‘    
+involvement in human actions, and to the extent that    
+modern readers find this complexity a needless    
+complication, the Iliad is less satisfying than the    
+15 Odyssey, with its simpler ‗scheme‘ of divine justice.    
+Finally, since the Iliad presents a historically verifiable    
+action, Troy‘s siege, the poem raises historical    
+questions that are absent from the Odyssey’s blithely    
+imaginative world.    
+(148 words)    
+  
+10. The author uses Mack‘s ―categories‖ (lines 4-5)    
+most probably in order to    
+(A) argue that the Iliad should replace the Odyssey    
+as the more popular poem    
+(B) indicate Mack‘s importance as a commentator    
+on the Iliad and the Odyssey    
+(C) suggest one way in which the Iliad and the    
+Odyssey can be distinguished    
+(D) point out some of the difficulties faced by    
+readers of the Iliad and the Odyssey    
+(E) demonstrate that the Iliad and the Odyssey    
+can best be distinguished by comparing their    
+respective heroes    
+  
+11. The passage is primarily concerned with    
+(A) distinguishing arguments    
+(B) applying classifications    
+(C) initiating a debate    
+(D) resolving a dispute    
+(E) developing a contrast    
+  
+12. It can be inferred from the passage that a reader of    
+the Iliad is likely to have trouble identifying with the    
+poem‘s hero for which of the following reasons?    
+(A) The hero is eventually revealed to be unheroic.    
+(B) The hero can be observed by the reader    
+only from without.    
+(C) The hero‘s psychology is not historically    
+verifiable.    
+(D) The hero‘s emotions often do not seem    
+appealing to the reader.    
+(E) The hero‘s emotions are not sufficiently    
+various to engage the reader‘s attention  
+
+  
+
+阅读1：  
+
+                                                        本文由尚友原创或整理  
+
+----------------------- Page 8-----------------------
+
+                                                                                  www.sharewithu.com  
+
+Q9：最后一句话意思是：然而仪器都有无法超越的一个极限。这个极限就是因为我们无法接受比个 
+人所传达的能量量子还小的sensedata 造成的。由此，选D；  smaller than  可以算是个关键词吧  
+  
+
+阅读2：  
+先上翻译：就荷马的两部史诗巨著而言，奥德赛总是比伊利亚特更为人们喜爱。这也许是因为奥德 
+赛具备更多易为读者所接受的神话特征。奥德赛的主题（按Maynard Mack 的分类）是把“人生作为 
+外部景观”的，因为读者被形形色色的事件所分散，主要从英雄奥德赛的外在表现来观察他；然而悲 
+剧伊利亚特却表现了“人生作为内心体验“的主题：它促使读者与阿卡琉斯的内心产生共鸣，而阿卡 
+琉斯的动机却使他成了一个不特别招人喜爱的英雄。此外，伊利亚特比奥德赛更多地暗示了众神对 
+人的行为的影响具有复杂性，而现代读者认为这种复杂性是多余的复杂化，从这个程度来讲，伊利 
+亚特不如奥德赛,因为后者更简单地体现了神的公正性。最后，因为史诗伊利亚特中提到了特洛伊围 
+城这一有史可查的事件，因而会引发一些历史学上的争议，但奥德赛因为描绘的是一个充满想象的 
+世界，所以就没有这样的问题。  
+  
+Q10:  作者引用了Mack‘s categories  是要干什么？  
+解析：看到  line 4-5 ，这个categories  说了什么，一个是life-as-spectacle，  另一个是  life-as-experience， 
+说以是想说明二者有什么不同。选C；  
+  
+Q11：文章主要讲什么？  
+解析：文章主要就是作对比，选E;  
+  
+Q12：  Iliad   的读者  identify with the poem‘s hero  有困难是什么原因？  
+解析：由identify with 定位到  line 8 ：readers are asked to identify with the mind of Achilles, whose  
+motivations render him a not particularly likable hero。选D；  
+
+                                      本文由尚友原创或整理  
