@@ -1,8 +1,6 @@
 package com.adm.common.daemon;
 
-import java.util.List;
 
-import com.adm.common.mapreducejob.WordCount;
 import com.adm.common.mapreducetask.LittleMing;
 import com.adm.common.mapreducetask.MapReduceTask;
 import com.adm.common.util.SmallFilesToSequenceFileConverterTask;
@@ -22,18 +20,13 @@ public class FileImporter implements Runnable{
 
 	}
 	
-	
-	
 	@Override
 	public void run() {
 		LittleMing xiaoming = new LittleMing();
-
 		
-		//MapReduceTask task = new WordCount();
-		//xiaoming.addMapReduceTask(task);
-		
-		
-		MapReduceTask task2 = new SmallFilesToSequenceFileConverterTask();
+		SmallFilesToSequenceFileConverterTask task2 = new SmallFilesToSequenceFileConverterTask();
+		task2.setSourceDirectory(sourceDirectory);
+		task2.setDestinationDirectory(destinationDirectory);
 		xiaoming.addMapReduceTask(task2);
 		
 		try {
