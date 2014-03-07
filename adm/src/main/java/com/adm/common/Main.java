@@ -13,16 +13,17 @@ public class Main{
 	 */
 	public static void main(String[] args) throws Exception {
 		LittleMing xiaoming = new LittleMing();
+
 		
-		/*
 		MapReduceTask task = new WordCount();
-		xiaoming.addMapReduceTask(task);
-		*/
+		//xiaoming.addMapReduceTask(task);
+		
 		
 		MapReduceTask task2 = new SmallFilesToSequenceFileConverterTask();
 		xiaoming.addMapReduceTask(task2);
 		
 		xiaoming.OnslaughtOfLittleMing();
+		
 
 	}
 

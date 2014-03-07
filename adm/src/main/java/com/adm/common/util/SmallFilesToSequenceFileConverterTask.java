@@ -55,8 +55,8 @@ public class SmallFilesToSequenceFileConverterTask extends MapReduceTask{
         job.setJobName("SmallFilesToSequenceFileConverter");
          */
         job = new Job(getConf(),"SmallFilesToSequenceFileConverter");
-        Path input_path = new Path(
-				"hdfs://localhost:9000/user/areshero/input01");
+        //Path input_path = new Path("hdfs://localhost:9000/user/areshero/input01");
+        Path input_path = new Path("./input");
 		Path output_path = new Path(
 				"hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter");
 
