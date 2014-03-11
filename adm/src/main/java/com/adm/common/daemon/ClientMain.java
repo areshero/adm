@@ -28,12 +28,6 @@ class ClientMain {
 
 }
 
-/**
- * 客户端线程
- * 
- * @author JCC
- * 
- */
 class ClientThread implements Runnable {
 	Socket socket = null;
 	int id = 0;

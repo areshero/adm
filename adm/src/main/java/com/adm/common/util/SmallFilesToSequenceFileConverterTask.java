@@ -13,7 +13,6 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
-import org.apache.hadoop.util.ToolRunner;
 
 import com.adm.common.mapreducetask.MapReduceTask;
 
@@ -35,6 +34,7 @@ public class SmallFilesToSequenceFileConverterTask extends MapReduceTask{
         @Override
         public void map(NullWritable key, BytesWritable value, Context context)
                 throws IOException, InterruptedException{
+        	
             context.write(filenameKey, value);
         }
     }
@@ -56,15 +56,17 @@ public class SmallFilesToSequenceFileConverterTask extends MapReduceTask{
          */
         job = new Job(getConf(),"SmallFilesToSequenceFileConverter");
         //Path input_path = new Path("hdfs://localhost:9000/user/areshero/input01");
-        Path input_path = new Path("./input");
-		Path output_path = new Path(
-				"hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter");
+        //Path input_path = new Path("./input");
+		//Path output_path = new Path("hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter");
 
+		
+		Path input_path = new Path(getSourceDirectory());
+		Path output_path = new Path(getDestinationDirectory());
 		FileInputFormat.addInputPath(job, input_path);
 
 		FileOutputFormat.setOutputPath(job, output_path);
         
-         
+        //System.out.println("reduce progress " + job.reduceProgress()); 
         //再次理解此处设置的输入输出格式。。。它表示的是一种对文件划分，索引的方法
         job.setInputFormatClass(WholeFileInputFormat.class);
         job.setOutputFormatClass(SequenceFileOutputFormat.class);
@@ -76,5 +78,21 @@ public class SmallFilesToSequenceFileConverterTask extends MapReduceTask{
         job.setMapperClass(SequenceFileMapper.class);
 		
 	}
+	
+	public String getSourceDirectory() {
+		return sourceDirectory;
+	}
+	public void setSourceDirectory(String sourceDirectory) {
+		this.sourceDirectory = sourceDirectory;
+	}
+	public String getDestinationDirectory() {
+		return destinationDirectory;
+	}
+	public void setDestinationDirectory(String destinationDirectory) {
+		this.destinationDirectory = destinationDirectory;
+	}
+
+	private String sourceDirectory = null;
+	private String destinationDirectory = null;
 
 }

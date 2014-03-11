@@ -36,7 +36,7 @@ public class ServerMain {
 	}
 }
 /**
- * @author 服务器处理客户端会话的线程
+ * 服务器处理客户端会话的线程
  */
 class ServerThread implements Runnable {
 
