@@ -13,8 +13,7 @@ import org.apache.hadoop.io.IOUtils;
 public class Merge {
 	
 	
-	public static void putMergeFunc(String LocalDir, String fsFile)
-			throws IOException {
+	public static void putMergeFunc(String LocalDir, String fsFile) throws IOException {
 		Configuration conf = new Configuration();
 		FileSystem fs = FileSystem.get(conf); // fs是HDFS文件系统
 		FileSystem local = FileSystem.getLocal(conf); // 本地文件系统

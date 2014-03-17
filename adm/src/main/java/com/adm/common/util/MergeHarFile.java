@@ -10,7 +10,7 @@ import org.apache.hadoop.fs.Path;
 public class MergeHarFile {
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration();
-		conf.set("fs.default.name", "hdfs://xxx.xxx.xxx.xxx:9000");
+		conf.set("fs.default.name", "hdfs://127.0.0.1:9000");
 
 		HarFileSystem fs = new HarFileSystem();
 		fs.initialize(new URI("har:///user/heipark/20120108_15.har"), conf);

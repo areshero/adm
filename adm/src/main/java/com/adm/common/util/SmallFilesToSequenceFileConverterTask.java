@@ -1,6 +1,9 @@
 package com.adm.common.util;
 
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.BytesWritable;
@@ -13,8 +16,17 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.parser.AutoDetectParser;
+import org.apache.tika.parser.ParseContext;
+import org.apache.tika.parser.Parser;
+import org.apache.tika.sax.BodyContentHandler;
+import org.xml.sax.ContentHandler;
+import org.xml.sax.SAXException;
 
 import com.adm.common.mapreducetask.MapReduceTask;
+import com.adm.common.filepraser.CovertFile;
 
 public class SmallFilesToSequenceFileConverterTask extends MapReduceTask{
 
@@ -34,6 +46,28 @@ public class SmallFilesToSequenceFileConverterTask extends MapReduceTask{
         @Override
         public void map(NullWritable key, BytesWritable value, Context context)
                 throws IOException, InterruptedException{
+        	Parser parser = new AutoDetectParser(); // Should auto-detect!
+
+        	byte[] originalFileBytes = value.getBytes();
+        	InputStream originalFileStream = new ByteArrayInputStream(originalFileBytes);
+        	
+    		ContentHandler handler = new BodyContentHandler(originalFileStream.available());
+    		Metadata metadata = new Metadata();
+    		ParseContext parseContext = new ParseContext();
+    		
+    		//System.out.println(stream.a);
+    		try {
+    			parser.parse(originalFileStream, handler, metadata, parseContext);
+            	String convertedValue = parseContext.toString();
+            	byte[] convertedBytes = convertedValue.getBytes();
+            	value.set(convertedBytes, 0, convertedBytes.length);
+			} catch (SAXException e) {
+				e.printStackTrace();
+			} catch (TikaException e) {
+				e.printStackTrace();
+			} finally {
+    			originalFileStream.close();
+    		}
         	
             context.write(filenameKey, value);
         }
@@ -70,8 +104,6 @@ public class SmallFilesToSequenceFileConverterTask extends MapReduceTask{
         //再次理解此处设置的输入输出格式。。。它表示的是一种对文件划分，索引的方法
         job.setInputFormatClass(WholeFileInputFormat.class);
         job.setOutputFormatClass(SequenceFileOutputFormat.class);
-         
-        //此处的设置是最终输出的key/value，一定要注意！
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(BytesWritable.class);
          

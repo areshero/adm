@@ -10,7 +10,7 @@ public class DaemonScheduler {
 			//Path input_path = new Path("./input");
 			//Path output_path = new Path("hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter");
 
-			String[] aStrings = {"./input","hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter"};
+			//String[] aStrings = {"./inputdoc","hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter"};
 			Daemon daemon = new Daemon();
 			//daemon.serverSocketListen(aStrings);
 			daemon.serverSocketListen();

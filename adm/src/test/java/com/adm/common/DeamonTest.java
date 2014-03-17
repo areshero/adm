@@ -18,7 +18,7 @@ import com.adm.common.fs.FileUtil;
 public class DeamonTest {
 
 	@Test
-	public void testDaemonConnect() throws InterruptedException {
+	public void testClient() throws InterruptedException {
 		try {
 			Socket socket = new Socket("127.0.0.1", 2222);
 			System.out.println("Client is connecting to the server...");
@@ -30,17 +30,6 @@ public class DeamonTest {
 			InputStream inputStream = socket.getInputStream();
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 			
-		
-			
-			
-			/*
-			String line = "777";
-			printWriter.write(line);
-			printWriter.flush();
-			*/
-			
-			
-			
 			
 			FileUtil fileUtil = new FileUtil();
 			File dir = new File("./input");
@@ -49,17 +38,13 @@ public class DeamonTest {
 			//	Thread.sleep(500);
 			//}
 		
-			String[] aStrings = {"./input/txt","hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter"};
+			String[] aStrings = {"./inputdoc","hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter"};
 			/*
 			String string1 = "./input";
 			String string2 = "hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter";
 			printWriter.write(string1);
 			printWriter.flush();
 			printWriter.write(string2);
-
-			printWriter.write(aStrings[0]);
-			printWriter.write("\n");
-			printWriter.write(aStrings[1]);
 */			
 			printWriter.println(aStrings[0]);
 			printWriter.println(aStrings[1]);
@@ -74,19 +59,6 @@ public class DeamonTest {
 				System.out.println("progress " + progress);
 			}
 
-			
-			/*
-			char[] reply = new char[1];
-			while ( bufferedReader.read(reply, 0, 1) > 0 ) {
-				int process = (int)reply[0];
-				System.out.println("Process from the server: " + process + "%");
-				Thread.sleep(750);
-				
-				if ( process == 100 ) {
-					break;
-				} 
-			}
-			*/
 			bufferedReader.close();
 			inputStream.close();
 			printWriter.close();
