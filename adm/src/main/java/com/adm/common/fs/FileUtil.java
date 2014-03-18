@@ -2,6 +2,8 @@ package com.adm.common.fs;
 
 import java.io.File;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FileUtil {
 
@@ -9,6 +11,15 @@ public class FileUtil {
 		// TODO Auto-generated constructor stub
 	}
 
+	public List<String> getAllFiles(File dir) {
+		List<String> files = new ArrayList<>();
+		
+		
+		
+		return files;
+	}
+	
+	
 	public long getFileSize(File file) {
 
 		if (!file.exists()) {

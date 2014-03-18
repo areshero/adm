@@ -20,7 +20,7 @@ public class DeamonTest {
 	@Test
 	public void testClient() throws InterruptedException {
 		try {
-			Socket socket = new Socket("127.0.0.1", 2222);
+			Socket socket = new Socket("127.0.0.1", 2223);
 			System.out.println("Client is connecting to the server...");
 			System.out.println("socket is connected? "+socket.isConnected());
 			
@@ -31,14 +31,14 @@ public class DeamonTest {
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 			
 			
-			FileUtil fileUtil = new FileUtil();
-			File dir = new File("./input");
-			long currentDirSize = fileUtil.getDirSize(dir);
+			//FileUtil fileUtil = new FileUtil();
+			//File dir = new File("./input");
+			//long currentDirSize = fileUtil.getDirSize(dir);
 			//while (currentDirSize < 2000000000){
 			//	Thread.sleep(500);
 			//}
 		
-			String[] aStrings = {"./inputdoc","hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter"};
+			String[] aStrings = {"./inputdoc","hdfs://localhost:9000/user/areshero/output.seq"};
 			/*
 			String string1 = "./input";
 			String string2 = "hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter";
@@ -52,11 +52,13 @@ public class DeamonTest {
 			System.out.println("write complete");
 			
 			//socket.shutdownOutput();
-			int progress = 0;
-			while(progress<10) {
 			
+			
+			int progress = 0;
+			while(progress<=100) {
+				//System.out.println(bufferedReader.readLine());
 				progress = Integer.parseInt(bufferedReader.readLine());
-				System.out.println("progress " + progress);
+				System.out.println("progress - client" + progress +"%");
 			}
 
 			bufferedReader.close();

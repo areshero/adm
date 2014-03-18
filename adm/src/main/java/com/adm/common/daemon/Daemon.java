@@ -12,9 +12,11 @@ import java.net.Socket;
 
 import javax.print.DocFlavor.STRING;
 
+import com.adm.common.util.SmallFilestoSequenceFileConverter;
+
 public class Daemon {
 
-	private static final int SERVER_PORT = 2222;
+	private static final int SERVER_PORT = 2223;
 
 	public Daemon() throws IOException {
 		//super(SERVER_PORT);
@@ -29,7 +31,13 @@ public class Daemon {
 			initializeSocket();
 			receivePath();
 			
-			combineFiles(paths);
+			
+			//use mapreduce task to combine small files
+			//combineFiles(paths);
+			
+			//use sequence writer to combine small files
+			combineFilesBySeqWriter();
+			
 			// receiveFileImportRequest(paths);
 			processFeedback();
 			closeSocket();
@@ -42,6 +50,13 @@ public class Daemon {
 	}
 	
 	
+	private void combineFilesBySeqWriter(){
+		converter = new SmallFilestoSequenceFileConverter(inputPath, outputPath);
+		converterThread = new Thread(converter);
+		converterThread.start();
+	}
+	
+	
 	public void serverSocketListen() throws Exception{
 		while (true) {
 			socket = serverSocket.accept();
@@ -50,8 +65,14 @@ public class Daemon {
 			receivePath();
 			
 			
-			String[] aStrings = {inputPath, outputPath};
-			combineFiles(aStrings);
+			//use mapreduce task to combine small files
+			//String[] aStrings = {inputPath, outputPath};
+			//combineFiles(aStrings);
+			
+			//use sequence writer to combine small files
+			combineFilesBySeqWriter();
+			
+			
 			// receiveFileImportRequest(paths);
 			processFeedback();
 			closeSocket();
@@ -90,7 +111,6 @@ public class Daemon {
 		
 	}
 	private void processFeedback() throws IOException {
-		int i = 1;
 		/*
 		try {
 			char[] reply = new char[10];
@@ -103,19 +123,23 @@ public class Daemon {
 		}
 		
 		*/
+		int i = 0;
+		
 		while (true) {
 			try {
 				Thread.sleep(750);
 				//TODO:get the file import progress
-				System.out.println("in process:" + i);
-				i++;
+				i = converter.getPorgress();
+				
+				System.out.println("process - server:" + i + "%");
+				
 				printWriter.println(i);
 				printWriter.flush();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} 
-			if (i > 17) {
+			if (i == 100) {
 				break;
 			}
 
@@ -158,5 +182,9 @@ public class Daemon {
 
 	private FileImporter fileImporter = null;
 
+	private SmallFilestoSequenceFileConverter converter = null;
+	
+	private Thread converterThread = null;
+	
 	private Thread fileImporterThread = null;
 }
