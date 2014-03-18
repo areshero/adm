@@ -1,4 +1,4 @@
-package com.adm.common.daemon;
+package com.adm.common.fileimporter;
 
 
 import com.adm.common.mapreducetask.LittleMing;

@@ -12,7 +12,11 @@ public class DaemonScheduler {
 
 			//String[] aStrings = {"./inputdoc","hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter"};
 			Daemon daemon = new Daemon();
+			
+			
 			//daemon.serverSocketListen(aStrings);
+			
+			//start daemon
 			daemon.serverSocketListen();
 			
 			

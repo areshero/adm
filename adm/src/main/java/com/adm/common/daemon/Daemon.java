@@ -1,7 +1,6 @@
 package com.adm.common.daemon;
 
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -10,17 +9,17 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import javax.print.DocFlavor.STRING;
 
+import com.adm.common.fileimporter.FileImporter;
 import com.adm.common.util.SmallFilestoSequenceFileConverter;
 
 public class Daemon {
 
-	private static final int SERVER_PORT = 2223;
 
 	public Daemon() throws IOException {
 		//super(SERVER_PORT);
-		serverSocket = new ServerSocket(SERVER_PORT);
+		//port : 2223
+		serverSocket = new ServerSocket(SocketConfigurationConstant.PORT);
 		System.out.println("Daemon started");
 	}
 
@@ -30,22 +29,14 @@ public class Daemon {
 			System.out.println("serverSocketListen? "+ socket.isConnected());
 			initializeSocket();
 			receivePath();
-			
-			
 			//use mapreduce task to combine small files
-			//combineFiles(paths);
+			combineFiles(paths);
 			
 			//use sequence writer to combine small files
-			combineFilesBySeqWriter();
+			//combineFilesBySeqWriter();
 			
-			// receiveFileImportRequest(paths);
 			processFeedback();
 			closeSocket();
-			//System.out.println("is closed?");
-			//System.out.println(socket.isClosed());
-			// MemoryMonitor.logUsedMemory(logger, "Before Deamon System.gc()");
-			// System.gc();
-			// MemoryMonitor.logUsedMemory(logger, "After Deamon System.gc()");
 		}
 	}
 	
@@ -60,10 +51,13 @@ public class Daemon {
 	public void serverSocketListen() throws Exception{
 		while (true) {
 			socket = serverSocket.accept();
-			System.out.println("serverSocketListen? "+ socket.isConnected());
-			initializeSocket();
-			receivePath();
+			System.out.println("Is server Socket listening? "+ socket.isConnected());
 			
+			//init
+			initializeSocket();
+			
+			//receive the inputpath and the outputpath
+			receivePath();
 			
 			//use mapreduce task to combine small files
 			//String[] aStrings = {inputPath, outputPath};
@@ -73,14 +67,14 @@ public class Daemon {
 			combineFilesBySeqWriter();
 			
 			
-			// receiveFileImportRequest(paths);
+			//process the feedback
 			processFeedback();
+			
+			//close the socket
 			closeSocket();
-			//System.out.println("is closed?");
-			//System.out.println(socket.isClosed());
-			// MemoryMonitor.logUsedMemory(logger, "Before Deamon System.gc()");
-			// System.gc();
-			// MemoryMonitor.logUsedMemory(logger, "After Deamon System.gc()");
+			
+			// check the memory
+			//TODO check the memory
 		}
 	}
 	
@@ -92,8 +86,8 @@ public class Daemon {
 		try {
 			inputPath = bufferedReader.readLine();
 			outputPath = bufferedReader.readLine();
-			System.out.println("in process receive inputstream:  " + inputPath);
-			System.out.println("in process receive inputstream:  " + outputPath);
+			System.out.println("in process receive path inputpath:  " + inputPath);
+			System.out.println("in process receive path outputpath:  " + outputPath);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -111,24 +105,11 @@ public class Daemon {
 		
 	}
 	private void processFeedback() throws IOException {
-		/*
-		try {
-			char[] reply = new char[10];
-			bufferedReader.read(reply, 0, 10);
-		
-			System.out.println("in process inputstream:  " + reply[1]);
-			
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		
-		*/
 		int i = 0;
 		
 		while (true) {
 			try {
 				Thread.sleep(750);
-				//TODO:get the file import progress
 				i = converter.getPorgress();
 				
 				System.out.println("process - server:" + i + "%");

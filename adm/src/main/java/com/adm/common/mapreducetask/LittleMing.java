@@ -22,7 +22,7 @@ public class LittleMing {
 	
 	public int runMapReduceTask(MapReduceTask task) throws Exception{
 		
-		int result = ToolRunner.run(task, task.getCommandArguments());
+		int result = ToolRunner.run(task, task.getArgs());
 		
 		if ( result != MapReduceTask.SUCCESS ) {
 			System.err.println("ERROR! in runMapReduceTask");

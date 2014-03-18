@@ -10,14 +10,6 @@ public class FileUtil {
 	public FileUtil() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public List<String> getAllFiles(File dir) {
-		List<String> files = new ArrayList<>();
-		
-		
-		
-		return files;
-	}
 	
 	
 	public long getFileSize(File file) {
@@ -41,7 +33,7 @@ public class FileUtil {
 			if (file.isFile()) {
 				dirSize += file.length();
 			} else if (file.isDirectory()) {
-				dirSize += getDirSize(file); // 如果遇到目录则通过递归调用继续统计
+				dirSize += getDirSize(file); 
 			}
 		}
 		return dirSize;

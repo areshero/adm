@@ -1,10 +1,12 @@
-package com.adm.common.daemon;
+package com.help;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+
+import com.adm.common.daemon.SocketConfigurationConstant;
 
 public class ServerMain {
 	/**
@@ -15,7 +17,7 @@ public class ServerMain {
 		System.out.println("ServerSocket Begin........");
 		int num = 0;
 		try {
-			serverSocket = new ServerSocket(Constant.PORT);
+			serverSocket = new ServerSocket(SocketConfigurationConstant.PORT);
 			// 使用循环方式一直等待客户端的连接
 			while (true) {
 				num++;

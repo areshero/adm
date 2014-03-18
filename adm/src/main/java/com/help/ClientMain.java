@@ -1,10 +1,12 @@
-package com.adm.common.daemon;
+package com.help;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
+
+import com.adm.common.daemon.SocketConfigurationConstant;
 
 class ClientMain {
 	/**
@@ -15,7 +17,7 @@ class ClientMain {
 		System.out.println("ClientSocket Begin........");
 		try {
 			for (int i = 0; i < 1; i++) {
-				socket = new Socket(Constant.SERVER_IP, Constant.PORT);
+				socket = new Socket(SocketConfigurationConstant.SERVER_IP, SocketConfigurationConstant.PORT);
 				new Thread(new ClientThread(socket, i), "ClientThread " + i).start();
 			}
 

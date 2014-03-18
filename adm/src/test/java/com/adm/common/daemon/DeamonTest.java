@@ -1,7 +1,6 @@
-package com.adm.common;
+package com.adm.common.daemon;
 
 import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,6 +12,7 @@ import java.net.UnknownHostException;
 
 import org.junit.Test;
 
+import com.adm.common.daemon.SocketConfigurationConstant;
 import com.adm.common.fs.FileUtil;
 
 public class DeamonTest {
@@ -20,7 +20,8 @@ public class DeamonTest {
 	@Test
 	public void testClient() throws InterruptedException {
 		try {
-			Socket socket = new Socket("127.0.0.1", 2223);
+			//server ip: 127.0.0.1 port : 2223
+			Socket socket = new Socket(SocketConfigurationConstant.SERVER_IP, SocketConfigurationConstant.PORT);
 			System.out.println("Client is connecting to the server...");
 			System.out.println("socket is connected? "+socket.isConnected());
 			
@@ -30,35 +31,47 @@ public class DeamonTest {
 			InputStream inputStream = socket.getInputStream();
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 			
+
+			/******************************/
+			//monitor the specific folder
 			
-			//FileUtil fileUtil = new FileUtil();
-			//File dir = new File("./input");
-			//long currentDirSize = fileUtil.getDirSize(dir);
-			//while (currentDirSize < 2000000000){
-			//	Thread.sleep(500);
-			//}
-		
-			String[] aStrings = {"./inputdoc","hdfs://localhost:9000/user/areshero/output.seq"};
+			FileUtil fileUtil = new FileUtil();
+			String sourceDirPathString = "./inputdoc";
+			//String distDirPathString = "hdfs://localhost:9000/user/areshero";
+			
+			
+			File dir = new File(sourceDirPathString);
+			long currentDirSize = 0;;
+			while(currentDirSize < 20000){
+				Thread.sleep(1000);
+				System.out.println("checking the folder size:" + currentDirSize);
+				currentDirSize = fileUtil.getDirSize(dir);
+			}
+			
+			
 			/*
 			String string1 = "./input";
 			String string2 = "hdfs://localhost:9000/user/areshero/output_SmallFilesToSequenceFileConverter";
 			printWriter.write(string1);
 			printWriter.flush();
-			printWriter.write(string2);
-*/			
+			printWriter.write(string2);*/			
+			String[] aStrings = {sourceDirPathString,"hdfs://localhost:9000/user/areshero/output.seq"};
 			printWriter.println(aStrings[0]);
 			printWriter.println(aStrings[1]);
 			printWriter.flush();
-			System.out.println("write complete");
+			System.out.println("write {inputpath ,outputpath} complete");
 			
 			//socket.shutdownOutput();
 			
 			
 			int progress = 0;
-			while(progress<=100) {
-				//System.out.println(bufferedReader.readLine());
+			while(progress<100) {
 				progress = Integer.parseInt(bufferedReader.readLine());
 				System.out.println("progress - client" + progress +"%");
+			}
+			
+			if(progress == 100){
+				System.out.println("done!");
 			}
 
 			bufferedReader.close();

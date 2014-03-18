@@ -51,14 +51,8 @@ public class SmallFilestoSequenceFileConverter implements Runnable{
 	}
 
 	private void start() throws IOException{
-		configuration = new Configuration();
-		fileSystem = FileSystem.get(URI.create(distDir),configuration);
-		distPath = new Path(distDir);
-		key = new Text();
-		value = new Text();
-		seqWriter = SequenceFile.createWriter(fileSystem, 
-				configuration, distPath, key.getClass(), value.getClass(), CompressionType.BLOCK);
-		System.out.println("ininininin");
+		init();
+		System.out.println("begin combining files");
 		File sourceDirFile = new File(sourceDir);
 		totalFiles = sourceDirFile.listFiles().length;
 		for(File currentFile : sourceDirFile.listFiles()){
@@ -66,22 +60,20 @@ public class SmallFilestoSequenceFileConverter implements Runnable{
 			key.set(currentFile.getName());
 			
 			Parser parser = new AutoDetectParser(); // Should auto-detect!
-			
         	InputStream originalFileStream = new FileInputStream(currentFile);
-        	//System.out.println(originalFileStream.available());
-    		ContentHandler handler = new BodyContentHandler(originalFileStream.available());
+        	
+        	//TODO figure out how to set the limit!!!!!!
+    		ContentHandler handler = new BodyContentHandler(300000);
     		
     		Metadata metadata = new Metadata();
     		//metadata.set("content type ","doc" );
     		ParseContext parseContext = new ParseContext();
     		parseContext.set(Parser.class, parser);
     		
-    		//System.out.println(stream.a);
     		try {
     			parser.parse(originalFileStream, handler, metadata, parseContext);
     			
     			//System.out.println("hander " + handler.toString());
-    			
             	//String convertedValue = parseContext.toString();
             	//System.out.println("convert value " + convertedValue);
             	//byte[] convertedBytes = convertedValue.getBytes();
@@ -94,10 +86,8 @@ public class SmallFilestoSequenceFileConverter implements Runnable{
     			originalFileStream.close();
     		}
 			
-    		//seqWriter.append(new Text("123"), new Text("321"));
     		seqWriter.append(key, value);
     		seqWriter.sync();
-			
 			
 			doneFiles++;
 		}
@@ -106,6 +96,16 @@ public class SmallFilestoSequenceFileConverter implements Runnable{
 		
 
 	
+	}
+
+	private void init() throws IOException {
+		configuration = new Configuration();
+		fileSystem = FileSystem.get(URI.create(distDir),configuration);
+		distPath = new Path(distDir);
+		key = new Text();
+		value = new Text();
+		seqWriter = SequenceFile.createWriter(fileSystem, 
+				configuration, distPath, key.getClass(), value.getClass(), CompressionType.BLOCK);
 	}
 
 	@Override

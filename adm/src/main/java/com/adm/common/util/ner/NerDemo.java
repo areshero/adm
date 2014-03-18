@@ -1,4 +1,4 @@
-package com.adm.common.util;
+package com.adm.common.util.ner;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.crf.*;

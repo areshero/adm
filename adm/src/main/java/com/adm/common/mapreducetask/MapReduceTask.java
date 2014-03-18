@@ -18,16 +18,16 @@ public abstract class MapReduceTask extends Configured implements Tool{
 	}
 
 	protected Job job;
-	public String[] getCommandArguments() {
-		return commandArguments;
-	}
-
-	public void setCommandArguments(String[] commandArguments) {
-		this.commandArguments = commandArguments;
-	}
-
-	private String[] commandArguments;
+	private String[] args;
 	
+	public String[] getArgs() {
+		return args;
+	}
+
+	public void setArgs(String[] args) {
+		this.args = args;
+	}
+
 	@Override
 	public Configuration getConf() {
 		if(job == null){
