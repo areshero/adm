@@ -30,6 +30,8 @@ public class LuceneIndexFiles {
 
 	private IndexWriter writer = null;
 	private boolean create = true;
+	private FileInputStream fileInputStream = null;
+	private Reader reader = null;
 	
 	public boolean isCreate() {
 		return create;
@@ -73,8 +75,9 @@ public class LuceneIndexFiles {
 	private Document file2Document(File file) throws Exception {
 
 		Document doc = new Document();
-		FileInputStream is = new FileInputStream(file);
-		Reader reader = new BufferedReader(new InputStreamReader(is,"UTF-8"));
+		fileInputStream = new FileInputStream(file);
+		reader = new BufferedReader(new InputStreamReader(fileInputStream,"UTF-8"));
+		
 		Field pathField = new StringField("path", file.getAbsolutePath() ,Field.Store.YES);
 		Field contenField = new TextField("contents", reader);
 		LongField modifiedField = new LongField("modified", file.lastModified(), Field.Store.NO);
@@ -125,11 +128,19 @@ public class LuceneIndexFiles {
 			System.out.println("updating file: " + file);
 			writer.updateDocument(new Term("path", file.getPath()), doc);
 		}
+		closeStream();
+	}
+
+	private void closeStream() throws IOException {
+		reader.close();
+		fileInputStream.close();
 	}
 
 	public void close() throws Exception {
 		writer.close();
 	}
+	
+	
 
 	public static void main(String[] args) throws Exception {
 		// 声明一个对象

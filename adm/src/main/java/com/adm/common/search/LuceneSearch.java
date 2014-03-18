@@ -45,8 +45,6 @@ public class LuceneSearch {
 				query = parser.parse(keyword);
 				
 				Date start = new Date();
-				
-				
 				results = searcher.search(query,totalhits);
 				Date end = new Date();
 				System.out.println("Search complete!! Used time: " + (end.getTime() - start.getTime()) + "millis");
