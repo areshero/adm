@@ -88,33 +88,43 @@ public class LuceneIndexFiles {
 
 	public boolean writeToIndex() throws Exception {
 		
-		File folder = new File(LuceneConfConstant.INDEX_FILE_PATH);
+		File dir = new File(LuceneConfConstant.INDEX_FILE_PATH);
 		
-		if(folder.canRead()){
-			if (folder.isDirectory()) {
-				String[] files = folder.list();
+		if(dir.canRead()){
+			if (dir.isDirectory()) {
 				System.out.println("Build the index right now!");
 				
-				
-				for (int i = 0; i < files.length; i++) {
-					File file = new File(folder, files[i]);
-					Document doc = file2Document(file);
-					
-					if(writer.getConfig().getOpenMode() == OpenMode.CREATE){
-						System.out.println("adding file: " + file);
-						writer.addDocument(doc);
-					}else{
-						System.out.println("updating file: " + file);
-						writer.updateDocument(new Term("path", file.getPath()), doc);
-					}
-					
+				for (File file : dir.listFiles()) {
+					writeFileToIndex(file);
 				}
+				// NOTE: if you want to maximize search performance,
+				// you can optionally call forceMerge here.  This can be
+				// a terribly costly operation, so generally it's only
+				// worth it when your index is relatively static (ie
+				// you're done adding documents to it):
+				//
+				// writer.forceMerge(1);
 				
+				return true;
+			} else{
+				writeFileToIndex(dir);
 				return true;
 			}
 		}
 		return false;
 		
+	}
+
+	private void writeFileToIndex(File file) throws Exception, IOException {
+		Document doc = file2Document(file);
+		
+		if(writer.getConfig().getOpenMode() == OpenMode.CREATE){
+			System.out.println("adding file: " + file);
+			writer.addDocument(doc);
+		}else{
+			System.out.println("updating file: " + file);
+			writer.updateDocument(new Term("path", file.getPath()), doc);
+		}
 	}
 
 	public void close() throws Exception {

@@ -67,7 +67,7 @@ public class LuceneSearch {
 				for (int i = 0; i < hits.length; i++) {
 					try {
 						Document doc = searcher.doc(hits[i].doc);
-						System.out.print("The " + i + " search result，filename：");
+						System.out.print("The " + (i+1) + " search result，filename：");
 						System.out.println(doc.get("path"));
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -79,7 +79,7 @@ public class LuceneSearch {
 
 		public static void main(String[] args) throws Exception {
 			LuceneSearch test = new LuceneSearch();
-			TopDocs hits = test.search("this");
+			TopDocs hits = test.search("is");
 			test.printResult(hits);
 		}
 }
